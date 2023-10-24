@@ -1,4 +1,5 @@
 # IE2-Triangle
+Git Lucky Team
 Template code for the In-Class Exercise 2 on Unit Testing, an exercise that focuses on unit testing and
 test effectiveness, using code coverage and mutation analysis.
 
