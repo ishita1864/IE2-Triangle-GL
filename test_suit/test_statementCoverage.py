@@ -15,8 +15,16 @@ class TestStatementCoverage(unittest.TestCase):
         # Test case 3: Isosceles triangle
         result = Triangle.classify(5, 5, 3)
         self.assertEqual(result, Triangle.Type.ISOSCELES)
+        
+        # Test case 4: Isosceles triangle
+        result = Triangle.classify(3,5, 5)
+        self.assertEqual(result, Triangle.Type.ISOSCELES)
+        
+        # Test case 5: Isosceles triangle
+        result = Triangle.classify(7, 5, 7)
+        self.assertEqual(result, Triangle.Type.ISOSCELES)
 
-        # Test case 4: Invalid triangle (one side is zero)
+        # Test case 6: Invalid triangle (one side is zero)
         result = Triangle.classify(0, 4, 5)
         self.assertEqual(result, Triangle.Type.INVALID)
         
@@ -25,11 +33,11 @@ class TestStatementCoverage(unittest.TestCase):
         self.assertEqual(result, Triangle.Type.INVALID)
 
 
-        # Test case 5: Invalid triangle (sum of two sides is less than the third side)
+        # Test case 8: Invalid triangle (sum of two sides is less than the third side)
         result = Triangle.classify(1, 1, 3)
         self.assertEqual(result, Triangle.Type.INVALID)
         
-        # Test case 5: Invalid triangle (sum of two sides is less than the third side)
+        # Test case 9: Invalid triangle (sum of two sides is less than the third side)
         result = Triangle.classify(1, 2, 3)
         self.assertEqual(result, Triangle.Type.INVALID)
         
