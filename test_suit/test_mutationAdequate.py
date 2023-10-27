@@ -70,7 +70,7 @@ class MutationAdequateTest(unittest.TestCase):
         self.assertEqual(result, Triangle.Type.INVALID)
        
         result = Triangle.classify(1, 2, 4)
-        # The mutant changes from `b + c <= a` to `b + c >= a`, so this should not trigger INVALID
+        
         self.assertEqual(result, Triangle.Type.INVALID)
 
 #         result = Triangle.classify(5,1,9)
